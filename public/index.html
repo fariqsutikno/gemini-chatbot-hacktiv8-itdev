@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gemini AI Chatbot</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude AI - Futuristic Chat</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>UntungGPT Chatbot</h1>
-    <div id="chat-box" class="chat-box"></div>
-    <form id="chat-form">
-      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
-      <button type="submit">Send</button>
-    </form>
-  </div>
-  <script src="script.js"></script>
+      <div class="bg-particles" id="particles"></div>
+    
+    <div class="container">
+        <h1>UntungGPT Chatbot</h1>
+        <div id="chat-box" class="chat-box"></div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    {{/*  <div class="bg-particles" id="particles"></div>
+    
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="chat-header">
+                <div class="chat-title">Chat dengan Claude</div>
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span style="font-size: 14px; color: rgba(255,255,255,0.7);">Online</span>
+                </div>
+            </div>
+
+            <div class="chat-container" id="chatContainer">
+                <div class="message assistant">
+                    <div class="message-bubble">
+                        Selamat datang! Saya Claude, asisten AI yang siap membantu Anda dengan berbagai pertanyaan dan tugas. Bagaimana saya bisa membantu Anda hari ini?
+                        <div class="message-time">Sekarang</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+                <span style="margin-left: 8px; color: rgba(255,255,255,0.7); font-size: 14px;">Claude sedang mengetik...</span>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        class="message-input" 
+                        placeholder="Ketik pesan Anda di sini..."
+                        id="messageInput"
+                        rows="1"
+                    ></textarea>
+                    <button class="send-button" onclick="sendMessage()" id="sendButton">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>  */}}
+    <script src="script.js"></script>
 </body>
 </html>
