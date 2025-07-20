@@ -56,7 +56,15 @@ form.addEventListener('submit', function (e) {
 function appendMessage(sender, text) {
     const msg = document.createElement('div');
     msg.classList.add('message', sender);
-    msg.textContent = text;
+
+    if (sender === 'bot') {
+        // Parse Markdown to HTML for bot responses
+        msg.innerHTML = marked.parse(text);
+    } else {
+        // Use textContent for user messages to prevent HTML injection
+        msg.textContent = text;
+    }
+
     chatBox.appendChild(msg);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
